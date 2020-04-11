@@ -139,30 +139,35 @@ button:focus {
 .main_title {
   text-align: center;
   margin-bottom: 75px;
+  background: rgba(46, 43, 43, 0.6);
+  padding: 20px;
+  color: white;
 }
 @media (max-width: 991px) {
   .main_title {
     margin-bottom: 40px;
   }
 }
-.main_title h2 {
-  font-size: 36px;
-  line-height: 30px;
+.main_title h1 {
+  font-size: 45px;
+  line-height: 50px;
   font-weight: bold;
   margin-bottom: 15px;
+  color: white;
 }
 @media (max-width: 575px) {
-  .main_title h2 {
+  .main_title h1 {
     font-size: 30px;
     margin-bottom: 10px;
   }
 }
 .main_title p {
-  font-size: 16px;
+  font-size: 22px;
   margin-bottom: 0px;
   max-width: 570px;
   font-weight: 300;
   margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .lite_bg {
@@ -1193,43 +1198,46 @@ video {
   color: #fff;
 }
 .fact_area .col-lg-4:nth-child(5) .single_fact {
-  margin-top: -129px;
+  margin-top: 20px;
 }
 @media (max-width: 991px) {
   .fact_area .col-lg-4:nth-child(5) .single_fact {
-    margin-top: 0;
+    margin-top: 20;
   }
 }
 @media (max-width: 991px) {
   .fact_area .col-lg-4:nth-child(4) .single_fact {
-    margin-top: -100px;
+    margin-top: 20px;
   }
 }
 @media (max-width: 767px) {
   .fact_area .col-lg-4:nth-child(4) .single_fact {
-    margin-top: 0px;
+    margin-top: 20px;
   }
 }
 @media (max-width: 991px) {
   .fact_area .col-lg-4:nth-child(6) .single_fact {
-    margin-top: -165px;
+    margin-top: 20px;
   }
 }
 @media (max-width: 767px) {
   .fact_area .col-lg-4:nth-child(6) .single_fact {
-    margin-top: 0px;
+    margin-top: 20px;
   }
 }
 
 .single_fact {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(46, 43, 43, 0.6);
   padding: 40px;
   margin-bottom: 30px;
+  margin-top: 20px;
   border: 1px solid transparent;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  min-height: 350px;
+  max-height: 350px;
 }
 .single_fact h4 {
   color: #fff;
@@ -1237,6 +1245,7 @@ video {
 }
 .single_fact p {
   margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .single_fact .f_icon {
   margin-bottom: 30px;
@@ -1244,7 +1253,27 @@ video {
 .single_fact:hover {
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
-
+.f_icon i {
+  font-size: 52px;
+}
+.f_icon .fa-laptop {
+  background: -webkit-linear-gradient(
+    rgb(245, 66, 66),
+    rgba(214, 135, 31, 0.849)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.f_icon .fa-headset {
+  background: -webkit-linear-gradient(rgb(55, 192, 255), rgb(44, 158, 124));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.f_icon .fa-video-slash {
+  background: -webkit-linear-gradient(rgb(198, 55, 255), rgb(243, 31, 155));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 /* End Big Features Area css
 ============================================================================================ */
 /* Start Testimonial Area css
