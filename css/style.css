@@ -177,11 +177,7 @@ button:focus {
 #search_input_box,
 .header-top .header-top-right a:hover,
 .single_feature:nth-child(3),
-.single_department:hover,
 .single_course .course_content .course_meta .price,
-.testimonial_area .owl-thumb-item.active .overlay-grad,
-.testimonial_area .owl-thumb-item .overlay-grad:hover,
-.testimonial_area .owl-thumb-item .overlay-grad.active,
 .registration_area,
 .categories_post:hover .categories_details,
 .blog_right_sidebar .widget_title,
@@ -193,6 +189,21 @@ button:focus {
 .comments-area .btn-reply:hover,
 .blog_btn:hover,
 .footer-area .footer-bottom .footer-social a:hover {
+  background: -webkit-linear-gradient(90deg, #00aee0 0%, #00fedc 100%);
+  background: -moz-linear-gradient(90deg, #00aee0 0%, #00fedc 100%);
+  background: -ms-linear-gradient(90deg, #00aee0 0%, #00fedc 100%);
+  background: -o-linear-gradient(90deg, #00aee0 0%, #00fedc 100%);
+  background: linear-gradient(90deg, #00aee0 0%, #00fedc 100%);
+}
+.testimonial_area .owl-thumb-item.active .overlay-grad,
+.testimonial_area .owl-thumb-item .overlay-grad:hover,
+.testimonial_area .owl-thumb-item .overlay-grad.active {
+  -webkit-box-shadow: 9px 6px 22px -4px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 9px 6px 22px -4px rgba(0, 0, 0, 1);
+  box-shadow: 9px 6px 22px -4px rgba(0, 0, 0, 1);
+}
+
+.single_department:hover {
   background: -webkit-linear-gradient(90deg, #00aee0 0%, #00fedc 100%);
   background: -moz-linear-gradient(90deg, #00aee0 0%, #00fedc 100%);
   background: -ms-linear-gradient(90deg, #00aee0 0%, #00fedc 100%);
@@ -271,7 +282,7 @@ button:focus {
   line-height: 50px;
   border-radius: 0px;
   outline: none !important;
-  box-shadow: 0px 20px 50px rgba(0, 175, 224, 0.3);
+  box-shadow: 0px 20px 50px rgba(25, 201, 250, 0.2);
   text-align: center;
   cursor: pointer;
   -webkit-transition: all 0.3s ease 0s;
@@ -1233,6 +1244,10 @@ video {
 ============================================================================================ */
 /* Start Testimonial Area css
 ============================================================================================ */
+.row.justify-content-center h1 {
+  margin-bottom: 5%;
+}
+
 .testimonial_area .owl-thumb-item {
   margin-right: 20px;
   position: relative;
@@ -1255,9 +1270,10 @@ video {
   transition: all 0.3s ease 0s;
   cursor: pointer;
 }
-.testimonial_area .owl-thumb-item .overlay-grad:hover,
-.testimonial_area .owl-thumb-item .overlay-grad.active {
+.testimonial_area .owl-thumb-item .position-relative .img-fluid:hover,
+.testimonial_area .owl-thumb-item .position-relative .img-fluid:active {
   opacity: 0.8;
+  transform: translateY(4);
 }
 
 .single_testimonial .testimonial_head {
@@ -1277,7 +1293,8 @@ video {
   margin-top: 30px;
 }
 .single_testimonial .testimonial_content p {
-  font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
   font-weight: 400;
   font-style: italic;
   margin-bottom: 40px;
