@@ -23,6 +23,10 @@ theme.
 /*----------------------------------------------------*/
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   line-height: 25px;
   font-size: 16px;
@@ -107,6 +111,10 @@ button:focus {
 
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
+div.department_area.section_gap {
+  padding-top: 180px; /* Tutaj dalem wiekszy odstep zeby sie nie wyswietlalo od razu pod filmikiem (i nie kradlo uwagi) tylko nieco nizej*/
+}
+
 .section_gap {
   padding: 120px 0;
 }
@@ -234,21 +242,23 @@ button:focus {
 .gradient-bg2,
 .single_feature:nth-child(1),
 .single_course .course_content .course_meta .price.df_color1 {
-  background: -webkit-linear-gradient(90deg, #e94086 0%, #e5925a 100%);
+  /* background: -webkit-linear-gradient(90deg, #e94086 0%, #e5925a 100%);
   background: -moz-linear-gradient(90deg, #e94086 0%, #e5925a 100%);
   background: -ms-linear-gradient(90deg, #e94086 0%, #e5925a 100%);
   background: -o-linear-gradient(90deg, #e94086 0%, #e5925a 100%);
-  background: linear-gradient(90deg, #e94040 0%, #000000 100%);
+  background: linear-gradient(90deg, #e94040 0%, #000000 100%); */
+  background-color: rgba(7, 53, 71, 0.39);
 }
 
 .gradient-bg3,
 .single_feature:nth-child(2),
 .single_course .course_content .course_meta .price.df_color2 {
-  background: -webkit-linear-gradient(90deg, #7349cc 0%, #66ca14 100%);
+  /* background: -webkit-linear-gradient(90deg, #7349cc 0%, #66ca14 100%);
   background: -moz-linear-gradient(90deg, #7349cc 0%, #e163e4 100%);
   background: -ms-linear-gradient(90deg, #7349cc 0%, #e163e4 100%);
   background: -o-linear-gradient(90deg, #7349cc 0%, #e163e4 100%);
-  background: linear-gradient(90deg, #7349cc 0%, #a1e463 100%);
+  background: linear-gradient(90deg, #7349cc 0%, #a1e463 100%); */
+  background-color: rgba(7, 53, 71, 0.39);
 }
 
 .gradient-color,
