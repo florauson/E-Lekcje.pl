@@ -26,7 +26,7 @@ theme.
 body {
   line-height: 25px;
   font-size: 16px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Buenard', serif;
   font-weight: 600;
   color: #777777;
 }
@@ -150,7 +150,6 @@ button:focus {
 .footer-area.section_gap {
   padding: 40px 0;
 }
-
 
 /* Main Title Area css
 ============================================================================================ */
@@ -1376,7 +1375,6 @@ video {
   background: #fff;
   text-align: center;
   padding: 40px;
-  font-family: 'Montserrat', sans-serif;
 }
 @media (max-width: 991px) {
   .register_form {
