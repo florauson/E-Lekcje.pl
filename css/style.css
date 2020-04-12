@@ -253,30 +253,10 @@ button:focus {
 ============================================================================================ */
 .primary-btn {
   display: inline-block;
-  background: -webkit-linear-gradient(
-    to right,
-    #00aee0 0%,
-    #00fedc 51%,
-    #00aee0 100%
-  );
-  background: -moz-linear-gradient(
-    to right,
-    #00aee0 0%,
-    #00fedc 51%,
-    #00aee0 100%
-  );
-  background: -ms-linear-gradient(
-    to right,
-    #00aee0 0%,
-    #00fedc 51%,
-    #00aee0 100%
-  );
-  background: -o-linear-gradient(
-    to right,
-    #00aee0 0%,
-    #00fedc 51%,
-    #00aee0 100%
-  );
+  background: -webkit-linear-gradient(to right, #00aee0 0%, #00fedc 51%, #00aee0 100%);
+  background: -moz-linear-gradient(to right, #00aee0 0%, #00fedc 51%, #00aee0 100%);
+  background: -ms-linear-gradient(to right, #00aee0 0%, #00fedc 51%, #00aee0 100%);
+  background: -o-linear-gradient(to right, #00aee0 0%, #00fedc 51%, #00aee0 100%);
   background: linear-gradient(to right, #00aee0 0%, #00fedc 51%, #00aee0 100%);
   background-size: 200% auto;
   padding: 0px 38px;
@@ -574,8 +554,7 @@ video {
   min-height: 780px;
   display: flex;
   position: relative;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../img/banner/home-banner.jpg) no-repeat scroll center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/banner/home-banner.jpg) no-repeat scroll center;
 }
 .home_banner_area .banner_inner {
   position: relative;
@@ -652,30 +631,10 @@ video {
   box-shadow: none;
 }
 .home_banner_area .search_course_wrap .search_course_btn {
-  background: -webkit-linear-gradient(
-    to right,
-    #00aee0 0%,
-    #00fedc 51%,
-    #00aee0 100%
-  );
-  background: -moz-linear-gradient(
-    to right,
-    #00aee0 0%,
-    #00fedc 51%,
-    #00aee0 100%
-  );
-  background: -ms-linear-gradient(
-    to right,
-    #00aee0 0%,
-    #00fedc 51%,
-    #00aee0 100%
-  );
-  background: -o-linear-gradient(
-    to right,
-    #00aee0 0%,
-    #00fedc 51%,
-    #00aee0 100%
-  );
+  background: -webkit-linear-gradient(to right, #00aee0 0%, #00fedc 51%, #00aee0 100%);
+  background: -moz-linear-gradient(to right, #00aee0 0%, #00fedc 51%, #00aee0 100%);
+  background: -ms-linear-gradient(to right, #00aee0 0%, #00fedc 51%, #00aee0 100%);
+  background: -o-linear-gradient(to right, #00aee0 0%, #00fedc 51%, #00aee0 100%);
   background: linear-gradient(to right, #00aee0 0%, #00fedc 51%, #00aee0 100%);
   background-size: 200% auto;
   border-radius: 0;
@@ -1237,7 +1196,7 @@ video {
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   min-height: 350px;
-  max-height: 350px;
+  max-height: max-content;
 }
 .single_fact h4 {
   color: #fff;
@@ -1257,10 +1216,7 @@ video {
   font-size: 52px;
 }
 .f_icon .fa-laptop {
-  background: -webkit-linear-gradient(
-    rgb(245, 66, 66),
-    rgba(214, 135, 31, 0.849)
-  );
+  background: -webkit-linear-gradient(rgb(245, 66, 66), rgba(214, 135, 31, 0.849));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -1271,6 +1227,21 @@ video {
 }
 .f_icon .fa-video-slash {
   background: -webkit-linear-gradient(rgb(198, 55, 255), rgb(243, 31, 155));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.f_icon .fa-wpforms {
+  background: -webkit-linear-gradient(rgb(25, 163, 6), rgb(110, 221, 6));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.f_icon .fa-thumbs-up {
+  background: -webkit-linear-gradient(rgb(6, 126, 163), rgb(22, 18, 226));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.f_icon .fa-handshake {
+  background: -webkit-linear-gradient(rgb(209, 121, 6), rgb(219, 83, 4));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -1405,6 +1376,9 @@ video {
   border-bottom: 1px solid #eeeeee;
   padding: 12px;
 }
+.register_form input.check {
+  width: initial;
+}
 .register_form input:focus {
   outline: none;
   box-shadow: none;
@@ -1441,7 +1415,9 @@ video {
   font-weight: 600;
   margin-top: 30px;
 }
-
+.quest {
+  margin-top: 20px;
+}
 /* End Registration Area css
 ============================================================================================ */
 /* Start Event Area css
@@ -1742,16 +1718,10 @@ video {
 .blog_right_sidebar .search_widget .input-group .form-control:-moz-placeholder {
   color: #fff;
 }
-.blog_right_sidebar
-  .search_widget
-  .input-group
-  .form-control::-moz-placeholder {
+.blog_right_sidebar .search_widget .input-group .form-control::-moz-placeholder {
   color: #fff;
 }
-.blog_right_sidebar
-  .search_widget
-  .input-group
-  .form-control::-webkit-input-placeholder {
+.blog_right_sidebar .search_widget .input-group .form-control::-webkit-input-placeholder {
   color: #fff;
 }
 .blog_right_sidebar .search_widget .input-group .form-control:focus {
@@ -1878,9 +1848,7 @@ video {
 .blog_right_sidebar .newsletter_widget .form-control::-moz-placeholder {
   color: #cccccc;
 }
-.blog_right_sidebar
-  .newsletter_widget
-  .form-control::-webkit-input-placeholder {
+.blog_right_sidebar .newsletter_widget .form-control::-webkit-input-placeholder {
   color: #cccccc;
 }
 .blog_right_sidebar .newsletter_widget .form-control:focus {
@@ -3467,8 +3435,7 @@ h6 {
 }
 
 .primary-checkbox input:checked + label {
-  background: url(../img/elements/primary-check.png) no-repeat center
-    center/cover;
+  background: url(../img/elements/primary-check.png) no-repeat center center/cover;
   border: none;
 }
 
@@ -3506,8 +3473,7 @@ h6 {
 }
 
 .confirm-checkbox input:checked + label {
-  background: url(../img/elements/success-check.png) no-repeat center
-    center/cover;
+  background: url(../img/elements/success-check.png) no-repeat center center/cover;
   border: none;
 }
 
@@ -3550,8 +3516,7 @@ h6 {
 }
 
 .disabled-checkbox input:checked + label {
-  background: url(../img/elements/disabled-check.png) no-repeat center
-    center/cover;
+  background: url(../img/elements/disabled-check.png) no-repeat center center/cover;
   border: none;
 }
 
@@ -3589,8 +3554,7 @@ h6 {
 }
 
 .primary-radio input:checked + label {
-  background: url(../img/elements/primary-radio.png) no-repeat center
-    center/cover;
+  background: url(../img/elements/primary-radio.png) no-repeat center center/cover;
   border: none;
 }
 
@@ -3628,8 +3592,7 @@ h6 {
 }
 
 .confirm-radio input:checked + label {
-  background: url(../img/elements/success-radio.png) no-repeat center
-    center/cover;
+  background: url(../img/elements/success-radio.png) no-repeat center center/cover;
   border: none;
 }
 
@@ -3683,8 +3646,7 @@ h6 {
 }
 
 .disabled-radio input:checked + label {
-  background: url(../img/elements/disabled-radio.png) no-repeat center
-    center/cover;
+  background: url(../img/elements/disabled-radio.png) no-repeat center center/cover;
   border: none;
 }
 
@@ -4279,30 +4241,10 @@ h6 {
   box-shadow: none;
 }
 .footer-area .single-footer-widget .click-btn {
-  background: -webkit-linear-gradient(
-    to right,
-    #00aee0 0%,
-    #00fedc 51%,
-    #00aee0 100%
-  );
-  background: -moz-linear-gradient(
-    to right,
-    #00aee0 0%,
-    #00fedc 51%,
-    #00aee0 100%
-  );
-  background: -ms-linear-gradient(
-    to right,
-    #00aee0 0%,
-    #00fedc 51%,
-    #00aee0 100%
-  );
-  background: -o-linear-gradient(
-    to right,
-    #00aee0 0%,
-    #00fedc 51%,
-    #00aee0 100%
-  );
+  background: -webkit-linear-gradient(to right, #00aee0 0%, #00fedc 51%, #00aee0 100%);
+  background: -moz-linear-gradient(to right, #00aee0 0%, #00fedc 51%, #00aee0 100%);
+  background: -ms-linear-gradient(to right, #00aee0 0%, #00fedc 51%, #00aee0 100%);
+  background: -o-linear-gradient(to right, #00aee0 0%, #00fedc 51%, #00aee0 100%);
   background: linear-gradient(to right, #00aee0 0%, #00fedc 51%, #00aee0 100%);
   background-size: 200% auto;
   color: #ffffff;
