@@ -109,7 +109,6 @@ button:focus {
 /*----------------------------------------------------*/
 .section_gap {
   padding: 120px 0;
-  text-transform: uppercase;
 }
 
 @media (max-width: 991px) {
@@ -138,10 +137,7 @@ button:focus {
 
 /*---------------------------------------------------- */
 /*---Footer Section Gap---------*/
-/* .section_gap .info_item {
-  position: relative;
-  padding-left: 150px;
-} */
+
 .section_gap .info_item i {
   left: 0;
   top: 0;
@@ -156,35 +152,6 @@ button:focus {
   padding: 40px 0;
 }
 
-.footer-area.section_gap p {
-  /* -border: 1px solid white; */
-  /* border-radius: 20px; */
-  /* background-color: #866051; */
-}
-
-/* @media (max-width: 991px) {
-  .section_gap {
-    padding: 60px 0;
-  }
-}
-
-.section_gap_top {
-  padding-top: 120px;
-}
-@media (max-width: 991px) {
-  .section_gap_top {
-    padding-top: 60px;
-  }
-}
-
-.section_gap_bottom {
-  padding-bottom: 120px;
-}
-@media (max-width: 991px) {
-  .section_gap_bottom {
-    padding-bottom: 60px;
-  }
-} */
 
 /* Main Title Area css
 ============================================================================================ */
