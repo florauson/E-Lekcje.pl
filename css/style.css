@@ -2242,6 +2242,9 @@ video {
   height: 420px;
   margin-bottom: 80px;
 }
+.contact_area .row .col-3 {
+
+}
 
 .contact_info .info_item {
   position: relative;
