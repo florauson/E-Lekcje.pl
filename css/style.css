@@ -113,6 +113,7 @@ button:focus {
 /*----------------------------------------------------*/
 div.department_area.section_gap {
   padding-top: 180px; /* Tutaj dalem wiekszy odstep zeby sie nie wyswietlalo od razu pod filmikiem (i nie kradlo uwagi) tylko nieco nizej*/
+  position: relative;
 }
 
 .section_gap {
@@ -354,7 +355,7 @@ div.department_area.section_gap {
   display: none;
 }
 .header_area .navbar .nav .nav-item:hover .nav-link,
-.header_area .navbar .nav .nav-item.active .nav-link {
+.header_area .navbar .nav a.active {
   color: #00aee0;
 }
 .header_area .navbar .nav .nav-item.submenu {
@@ -384,6 +385,12 @@ div.department_area.section_gap {
     border-radius: 0px;
   }
 }
+.navbar-trans li > a:hover,
+.navbar-trans li > a:focus,
+.header_area .navbar .nav li.nav-item a.active.nav-link {
+  color: #00aee0;
+}
+
 .header_area .navbar .nav .nav-item.submenu ul:before {
   content: '';
   width: 0;
@@ -455,10 +462,10 @@ div.department_area.section_gap {
   -ms-transform: translateY(70px);
   -o-transform: translateY(70px);
   transform: translateY(70px);
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0s ease 0s;
+  -moz-transition: all 0s ease 0s;
+  -o-transition: all 0s ease 0s;
+  transition: all 0s ease 0s;
   box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
 }
 .header_area.navbar_fixed .main_menu .navbar .nav .nav-item .nav-link {
@@ -4208,7 +4215,7 @@ h6 {
 /* =================================== */
 /*  Footer Styles
 /* =================================== */
-.footer-area {
+/* .footer-area {
   background: #000000;
 }
 @media (max-width: 991px) {
@@ -4341,6 +4348,18 @@ h6 {
     text-align: left;
     margin-top: 20px;
   }
+} */
+
+.footer-area .row {
+  padding-top: 30px;
+}
+.footer-area {
+  background: rgb(0, 0, 0);
+}
+.footer-area h6 {
+  color: rgb(112, 112, 112);
+  border-bottom: 1px solid white;
+  width: max-content;
 }
 
 /*---------------------------------------------------- */
