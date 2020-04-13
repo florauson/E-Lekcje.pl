@@ -2242,10 +2242,15 @@ video {
   height: 420px;
   margin-bottom: 80px;
 }
-.contact_area .row .col-3 {
-
+.contact_form .form-group label {
+color: red;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 12px;
 }
-
+.contact_form .form-group input.error,
+.contact_form .form-group textarea.error {
+border-color: red;
+  }
 .contact_info .info_item {
   position: relative;
   padding-left: 45px;

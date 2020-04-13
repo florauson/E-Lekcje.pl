@@ -1,5 +1,7 @@
 $(document).ready(function(){
-    
+ var form2 = $('#contactForm'); // contact form
+  var submit = $('.primary-btn.kontakt'); // submit button
+  var alert = $('.alert-msg'); // alert div for show alert message
     (function($) {
         "use strict";
 
@@ -9,6 +11,9 @@ $(document).ready(function(){
     // }, "type the correct answer -_-");
 
     // validate contactForm form
+    form2.on('submit', function (e) {
+        e.preventDefault(); // prevent default form subm
+    })
     $(function() {
         $('#contactForm').validate({
             rules: {
@@ -30,35 +35,40 @@ $(document).ready(function(){
                 },
                 message: {
                     required: true,
-                    minlength: 20
+                    minlength: 5
                 }
             },
             messages: {
                 name: {
-                    required: "come on, you have a name, don't you?",
-                    minlength: "your name must consist of at least 2 characters"
+                    required: "Musisz podać imię",
+                    minlength: "Imię musi składać się z co najmniej 2 znaków"
                 },
                 subject: {
-                    required: "come on, you have a subject, don't you?",
-                    minlength: "your subject must consist of at least 4 characters"
+                    required: "Podaj temat wiadomości",
+                    minlength: "Temat musi zawierać co najmniej 4 znaki"
                 },
                 number: {
                     required: "come on, you have a number, don't you?",
                     minlength: "your Number must consist of at least 5 characters"
                 },
                 email: {
-                    required: "no email, no message"
+                    required: "Podaj swój adres e-mail",
+                    email: "Podaj poprawny adres e-mail"
                 },
                 message: {
-                    required: "um...yea, you have to write something to send this form.",
-                    minlength: "thats all? really?"
+                    required: "Podaj treść wiadomości",
+                    minlength: "Wiadomość musi zawierać co najmniej 5 znaków"
                 }
             },
+            highlight: function(element, errorClass) {
+                $(element).addClass(errorClass);
+                
+              },
             submitHandler: function(form) {
                 $(form).ajaxSubmit({
                     type:"POST",
                     data: $(form).serialize(),
-                    url:"contact_process.php",
+                    url:"contact_process2.php",
                     success: function() {
                         $('#contactForm :input').attr('disabled', 'disabled');
                         $('#contactForm').fadeTo( "slow", 1, function() {
@@ -66,7 +76,9 @@ $(document).ready(function(){
                             $(this).find('label').css('cursor','default');
                             $('#success').fadeIn()
                             $('.modal').modal('hide');
-		                	$('#success').modal('show');
+                            $('#success').modal('show');
+                            submit.attr('disabled', 'disabled'); // reset submit button text
+                            submit.attr('style', 'background: rgba(61, 62, 63, 0.637);');
                         })
                     },
                     error: function() {
