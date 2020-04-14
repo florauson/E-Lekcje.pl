@@ -975,6 +975,7 @@ video {
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
+
 .single_course .course_content {
   padding-top: 30px;
 }
