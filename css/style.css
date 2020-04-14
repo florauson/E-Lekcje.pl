@@ -602,7 +602,8 @@ video {
   min-height: 780px;
   display: flex;
   position: relative;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/banner/home-banner.jpg) no-repeat scroll center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+
 }
 .home_banner_area .banner_inner {
   position: relative;
@@ -616,21 +617,33 @@ video {
 }
 .home_banner_area .banner_inner .banner_content {
   color: rgb(255, 255, 255);
-  background-color: rgba(16, 133, 179, 0.3);
+  background: -webkit-linear-gradient(to right, #00aee0 0%, #00fedc 51%, #00aee0 100%);
+  background: -moz-linear-gradient(to right, #00aee0 0%, #00fedc 51%, #00aee0 100%);
+  background: -ms-linear-gradient(to right, #00aee0 0%, #00fedc 51%, #00aee0 100%);
+  background: -o-linear-gradient(to right, #00aee0 0%, #00fedc 51%, #00aee0 100%);
+  background: linear-gradient(to right, rgba(0, 175, 224, 0.5) 0%,  rgba(0, 254, 220, 0.5)51%,rgba(0, 175, 224, 0.5) 100%);
   padding: 20px;
+  border-radius: 25px;
+  color:rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-family: Raleway;
+  letter-spacing: 0.12em;
 }
+
 .home_banner_area .banner_inner .banner_content h2 {
   margin-top: 0px;
   font-size: 48px;
   font-weight: 700;
   color: rgb(255, 255, 255);
   line-height: 54px;
+  text-align: center;
 }
 .home_banner_area .banner_inner .banner_content p {
-  max-width: 520px;
+  max-width: 100%;
   font-size: 18px;
   font-weight: 600;
   margin: 25px 0px 45px;
+  text-align:center;
 }
 .home_banner_area .search_course_wrap {
   margin-top: 40px;
