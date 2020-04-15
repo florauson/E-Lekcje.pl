@@ -413,10 +413,9 @@ div.department_area.section_gap {
 
 .header_area .navbar .nav li.nav-item.czer a {
   background: -webkit-linear-gradient(rgb(4, 0, 255), rgb(255, 3, 221));
- background-clip: text;
- -webkit-background-clip: text;
-color: transparent;
-
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 
