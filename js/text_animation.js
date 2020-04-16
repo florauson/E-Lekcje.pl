@@ -54,3 +54,56 @@ window.onload = function() {
   css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid white }";
   document.body.appendChild(css);
 };
+
+
+var mat=document.querySelector(".matematyka");
+var fiz=document.querySelector(".fizyka");
+var ang = document.querySelector(".angielski");
+var inny = document.querySelector(".inny");
+var infor= document.querySelector(".informatyka");
+var boksy_all=document.querySelectorAll(".opis");
+backgrounds=[mat,fiz,ang,inny,infor];
+
+function lighton (e) {
+e.stopPropagation();
+let przedmiot=e.currentTarget.classList.item(2);
+let boks = ".opis.".concat(przedmiot);
+let boks_elem=document.querySelector(boks);
+boksy_all.forEach(elem => {
+  elem.style.display="none";
+})
+
+if (e.currentTarget.classList.contains("clicked"))
+{
+e.currentTarget.classList.remove("clicked");
+document.querySelector(".opis.przedmioty").style.display="initial";
+}
+else {
+backgrounds.forEach((elem) => {
+  elem.classList.remove("clicked")
+})
+e.currentTarget.classList.add("clicked");
+boks_elem.style.display="initial";
+}
+
+}
+
+
+mat.addEventListener('click', lighton);
+fiz.addEventListener('click', lighton);
+ang.addEventListener('click', lighton);
+inny.addEventListener('click', lighton);
+infor.addEventListener('click', lighton);
+
+document.querySelector('body').addEventListener('click', ()=> {
+  backgrounds.forEach((elem) => {
+    elem.classList.remove("clicked")
+  })
+
+  boksy_all.forEach(elem => {
+    elem.style.display="none";
+  })
+  document.querySelector(".opis.przedmioty").style.display="initial";
+
+
+});

@@ -28,7 +28,12 @@ theme.
   src: url(/fonts/LemonadeStand-J0Ln.ttf);
 }
 
-
+.opis{
+  display:none;
+}
+.opis.przedmioty{
+  display:initial;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -432,10 +437,11 @@ div.department_area.section_gap {
 }
 
 .header_area .navbar .nav li.nav-item.czer a {
-  background: linear-gradient(to right, #2596b6 0%, #3dd6f1 51%, #32f5e5 100%);
+  background: linear-gradient(to right, #b6252c 0%, #f1703d 51%, #f53232 100%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+
 
 }
 
@@ -958,7 +964,6 @@ video {
   color: #ffffff;
   padding: 40px;
 width:100%;
-height:100%;
 border-radius: 30px;
 
 }
@@ -975,17 +980,18 @@ border-radius: 30px;
   background: linear-gradient(135deg, rgb(255, 255, 255) 0%,  rgb(255, 255, 255)51%,rgba(255, 255, 255, 0.5) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  
 }
 .single_feature p {
   margin: 0;
   font-size: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.5em;
-  font-weight: 700;
+  font-weight: 500;
   /* background: linear-gradient(135deg, rgb(255, 255, 255) 0%,rgb(255, 255, 255)4)51%,rgb(255, 255, 255) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; */
-  text-shadow: 1.5px 0px 0px rgb(0, 217, 225);
+
 }
 .f_icon2 i {
   font-size: 70px;
@@ -1006,12 +1012,14 @@ border-radius: 30px;
 ============================================================================================ */
 .single_department {
   background: #f9f9f9;
-  padding: 40px 30px;
+  /* padding: 40px 30px; */
+  padding-top: 30px;
+  padding-bottom: 30px;
   margin-bottom: 30px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
-  transition: all 4s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 .single_department img {
   -webkit-transition: all 0.3s ease 0s;
@@ -1035,16 +1043,33 @@ border-radius: 30px;
   background: -ms-linear-gradient(90deg, #00aee0 0%, #00fedc 100%);
   background: -o-linear-gradient(90deg, #00aee0 0%, #00fedc 100%);
   background-color: linear-gradient(90deg, #00aee0 20%, #00fedc 100%);
+ cursor: pointer;
 }
-.single_department:hover img {
+.clicked .single_department {
+  box-shadow: 0px 20px 50px rgba(52, 212, 20, 0.3);
+  background: -webkit-linear-gradient(90deg, #00aee0 0%, #00fedc 100%);
+  background: -moz-linear-gradient(90deg, #00aee0 0%, #00fedc 100%);
+  background: -ms-linear-gradient(90deg, #00aee0 0%, #00fedc 100%);
+  background: -o-linear-gradient(90deg, #00aee0 0%, #00fedc 100%);
+  background-color: linear-gradient(90deg, #00aee0 20%, #00fedc 100%);
+  border: 2px solid rgb(15, 124, 143);
+}
+
+
+.single_department:hover img,
+.clicked .single_department img {
   -webkit-filter: brightness(0) invert(1);
   -moz-filter: brightness(0) invert(1);
   -ms-filter: brightness(0) invert(1);
   -o-filter: brightness(0) invert(1);
   filter: brightness(0) invert(1);
 }
-.single_department:hover h4 {
+.single_department:hover h4{
   color: #ffffff;
+}
+
+.clicked .single_department h4 {
+  color: white;
 }
 
 .dpmt_right h1 {
