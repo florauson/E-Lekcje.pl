@@ -117,6 +117,20 @@ button:focus {
 
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
+
+/* START CENNIK */
+
+.noPromo {
+  text-decoration: line-through solid rgb(233, 14, 14);
+}
+
+
+/* END OF CENNIK */
+
+
+
+
+
 div.department_area.section_gap {
   padding-top: 180px; /* Tutaj dalem wiekszy odstep zeby sie nie wyswietlalo od razu pod filmikiem (i nie kradlo uwagi) tylko nieco nizej*/
   position: relative;
@@ -1387,7 +1401,7 @@ border-radius: 30px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.f_icon .fa-video-slash {
+.f_icon .fa-video {
   background: -webkit-linear-gradient(rgb(198, 55, 255), rgb(243, 31, 155));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
