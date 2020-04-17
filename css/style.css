@@ -141,19 +141,36 @@ button:focus {
   text-decoration: line-through solid rgb(233, 14, 14);
 }
 
+.listCennik {
+  list-style: none;
+  padding: 0;
+}
+
+.listCennik li:before {
+  font-size: 1.5rem;
+  content: '✓';
+  padding-right: 5px;
+}
 
 /* END OF CENNIK */
 
 /* START OF PRZEDMIOTY */
 
-.przedmiotyLista li {
-  /* list-style: none; */
+.przedmiotyLista {
+  list-style: none;
+  padding: 0;
 }
 
 .przedmiotyLista li:before {
-  /* content: '✓'; */
-  padding-right: 50px;
+  font-size: 1.5rem;
+  content: '✓';
+  padding-right: 5px;
 }
+
+.department_area p {
+  padding-bottom: 0.7rem;
+}
+
 
 /* END OF PRZEDMIOTY */
 
