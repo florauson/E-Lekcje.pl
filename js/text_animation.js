@@ -70,6 +70,7 @@ function lighton(e) {
     elem.style.display = "none";
   });
   if ($(window).width() > 768) {
+    e.stopPropagation();
     let przedmiot = e.currentTarget.classList.item(4);
     let boks = ".opis.".concat(przedmiot);
     let boks_elem = document.querySelector(boks);
@@ -102,14 +103,14 @@ ang.addEventListener("click", lighton);
 inny.addEventListener("click", lighton);
 infor.addEventListener("click", lighton);
 
-// document.querySelector("body").addEventListener("click", (e) => {
-//   console.log(e.target);
-//   backgrounds.forEach((elem) => {
-//     elem.classList.remove("clicked");
-//   });
+document.querySelector("body").addEventListener("click", (e) => {
 
-//   boksy_all.forEach((elem) => {
-//     elem.style.display = "none";
-//   });
-//   document.querySelector(".opis.przedmioty").style.display = "initial";
-// });
+  backgrounds.forEach((elem) => {
+    elem.classList.remove("clicked");
+  });
+
+  boksy_all.forEach((elem) => {
+    elem.style.display = "none";
+  });
+  document.querySelector(".opis.przedmioty").style.display = "initial";
+});
