@@ -2,7 +2,7 @@
 
 $(document).ready(function () {
   var form = $('#myForm'); // contact form
-  var submit = $('.primary-btn .zglos'); // submit button
+  var submit = $('.primary-btn.zglos'); // submit button
   var alert = $('.alert-msg'); // alert div for show alert message
 
   // form submit event
