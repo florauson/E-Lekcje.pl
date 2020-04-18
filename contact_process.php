@@ -8,7 +8,9 @@
 	$przedmiot2 = $_POST['przedmiot2'];
 	$przedmiot3 = $_POST['przedmiot3'];
 	$przedmiot4 = $_POST['przedmiot4'];
+	$probna= $_POST['probna'];
 	$kto=$_POST['kim'];
+	$dodatkowe=$_POST['dodatkowa'];
 
 
 
@@ -35,6 +37,8 @@
 		<tr><td>Informatyka: '.$przedmiot3.'</td></tr>
 		<tr><td>pomoc w lekcjach: '.$przedmiot4.'</td></tr>
 		<tr><td> Inne: '.$inna.'</td></tr>
+		<tr><td> Czy lekcja próbna?: '.$probna.'</td></tr>
+		<tr><td> Dodatkowe info: '.$dodatkowe.'</td></tr>
 </tbody></table>';
 
    
