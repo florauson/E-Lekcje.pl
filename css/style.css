@@ -152,6 +152,14 @@ button:focus {
   padding-right: 5px;
 }
 
+.contact_area .main_title p {
+  padding-bottom: 1.4rem;
+}
+
+.contact_area .main_title h5 {
+  padding-bottom: 0.7rem;
+}
+
 /* END OF CENNIK */
 
 /* START OF PRZEDMIOTY */
