@@ -764,8 +764,10 @@ video {
   /* background-color: rgba(255, 255, 255, 0.884); */
 
   background-image: url("./../img/banner/home-banner.jpg");
-
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 
