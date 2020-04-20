@@ -755,6 +755,10 @@ video {
   min-height: 100%;
 }
 
+.regulamin.container {
+  font-family: 'Times New Roman', Times, serif;
+}
+
 .home_banner_area {
   z-index: 1;
   display: flex;
