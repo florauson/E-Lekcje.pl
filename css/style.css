@@ -2980,7 +2980,7 @@ div.f_icon1 {
 }
 
 .comment-form textarea.form-control {
-  height: 140px;
+  height: 100%;
   resize: none;
 }
 
@@ -3094,7 +3094,7 @@ div.f_icon1 {
 }
 
 .contact_form .form-group textarea.form-control {
-  height: 140px;
+  height: 182px;
 }
 
 .contact_form .primary-btn {
