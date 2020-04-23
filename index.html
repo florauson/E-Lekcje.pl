@@ -72,7 +72,6 @@
     <div class="main_menu">
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-
           <!-- Brand and toggle get grouped for better mobile display -->
           <a class="navbar-brand logo_h" href="/"><img class="main_logo" src="img/logo.png" alt="studenci" /></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -84,17 +83,18 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
             <ul class="nav navbar-nav menu_nav ml-auto">
-              <li class="nav-item">
+              <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
                 <a class="nav-link" href="/">Strona główna</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
                 <a class="nav-link" href="#przedmioty">Przedmioty</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
                 <a class="nav-link" href="#jaktodziala">Jak to działa?</a>
               </li>
-              <li class="nav-item czer">
-                <a class="nav-link" href="#zapisz">ZAPISZ SIĘ</a>
+              <li class="nav-item czer" data-toggle="collapse" data-target=".navbar-collapse.show">
+                <a class="nav-link" href="#zapisz">ZAPISZ
+                  SIĘ</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="cennik">Cennik</a>
@@ -108,6 +108,12 @@
       </nav>
     </div>
   </header>
+  <!-- Brand and toggle get grouped for better mobile display -->
+
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+
+
   <!--================ End Header Menu Area =================-->
 
   <!--================ Start Home Banner Area =================-->
@@ -1044,6 +1050,7 @@
   <script src="js/mail-script.js"></script>
   <script src="js/theme.js"></script>
   <script src="js/text_animation.js"></script>
+
   <script>
     $(function () {
       $(".footer-area").load("footer.html");
