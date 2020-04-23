@@ -22,7 +22,8 @@ $wiadomosc = $_REQUEST['message'];
 	$message ='<table style="width:100%">
         <tbody><tr>
                 <td>Imię i nazwisko:  '.$name.'</td>
-		</tr>
+        </tr>
+        <tr><td> nr telefonu: '.$number.'</td></tr>
 		<tr><td> Wiadomość: '.$wiadomosc.'</td></tr>
 
 </tbody></table>';
