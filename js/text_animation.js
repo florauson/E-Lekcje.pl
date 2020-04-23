@@ -59,11 +59,12 @@ window.onload = function () {
 
 var mat = document.querySelector(".matematyka");
 var fiz = document.querySelector(".fizyka");
+var niem = document.querySelector(".niemiecki");
 var ang = document.querySelector(".angielski");
 var inny = document.querySelector(".inny");
 var infor = document.querySelector(".informatyka");
 var boksy_all = document.querySelectorAll(".opis");
-backgrounds = [mat, fiz, ang, inny, infor];
+backgrounds = [mat, fiz, ang, inny, infor, niem];
 
 function lighton(e) {
   boksy_all.forEach((elem) => {
@@ -102,6 +103,7 @@ fiz.addEventListener("click", lighton);
 ang.addEventListener("click", lighton);
 inny.addEventListener("click", lighton);
 infor.addEventListener("click", lighton);
+niem.addEventListener("click", lighton);
 
 document.querySelector("body").addEventListener("click", (e) => {
 
