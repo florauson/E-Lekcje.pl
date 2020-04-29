@@ -63,8 +63,11 @@ var niem = document.querySelector(".niemiecki");
 var ang = document.querySelector(".angielski");
 var inny = document.querySelector(".inny");
 var infor = document.querySelector(".informatyka");
+var bio = document.querySelector(".biologia");
+var chem = document.querySelector(".chemia");
+var pol = document.querySelector(".polski");
 var boksy_all = document.querySelectorAll(".opis");
-backgrounds = [mat, fiz, ang, inny, infor, niem];
+backgrounds = [mat, fiz, ang, inny, infor, niem, bio, chem, pol];
 
 function lighton(e) {
   boksy_all.forEach((elem) => {
@@ -104,7 +107,9 @@ ang.addEventListener("click", lighton);
 inny.addEventListener("click", lighton);
 infor.addEventListener("click", lighton);
 niem.addEventListener("click", lighton);
-
+bio.addEventListener("click", lighton);
+chem.addEventListener("click", lighton);
+pol.addEventListener("click", lighton);
 document.querySelector("body").addEventListener("click", (e) => {
 
   backgrounds.forEach((elem) => {
@@ -116,3 +121,54 @@ document.querySelector("body").addEventListener("click", (e) => {
   });
   document.querySelector(".opis.przedmioty").style.display = "initial";
 });
+
+// DO FORMULARZA
+var ang_c = document.querySelector(".check1");
+var mat_c = document.querySelector(".check2");
+var infor_c = document.querySelector(".check3");
+var fiz_c = document.querySelector(".check4");
+var niem_c = document.querySelector(".check5");
+var bio_c = document.querySelector(".check6");
+var chem_c = document.querySelector(".check7");
+var opieka_c = document.querySelector(".check8");
+var inna = document.querySelector("input[name='inna']");
+inny_sel = document.querySelector(".inny_sel");
+ang_c.addEventListener("click", select_f);
+mat_c.addEventListener("click", select_f);
+infor_c.addEventListener("click", select_f);
+fiz_c.addEventListener("click", select_f);
+niem_c.addEventListener("click", select_f);
+opieka_c.addEventListener("click", select_f);
+bio_c.addEventListener("click", select_f);
+chem_c.addEventListener("click", select_f);
+inna.addEventListener("focus", select_f2);
+inna.addEventListener("blur", select_f2);
+inna.addEventListener("keyup", select_f2);
+var selekty = document.querySelectorAll("select");
+
+selekty.forEach(elem => {
+  elem.style.display = "none";
+})
+
+function select_f(e) {
+  let klasa = ".".concat(e.target.name.concat("_sel"));
+
+  if (e.target.checked == true) {
+    document.querySelector(klasa).style.display = "block"
+    document.querySelector(klasa).setAttribute("required", "");
+  } else {
+    document.querySelector(klasa).style.display = "none"
+    document.querySelector(klasa).removeAttribute("required");
+  }
+}
+
+function select_f2(e) {
+
+  if (e.target.value != "") {
+    inny_sel.style.display = "block"
+    inny_sel.setAttribute("required", "");
+  } else {
+    inny_sel.style.display = "none"
+    inny_sel.removeAttribute("required");
+  }
+}
