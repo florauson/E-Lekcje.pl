@@ -10,6 +10,7 @@
 	$fiz = $_POST['fiz'];
 	$niem = $_POST['niem'];
 	$opieka = $_POST['opieka'];
+	$pol = $_POST['pol'];
 $bio = $_POST['bio'];
 $chem=$_POST['chem'];
 	$ang_level = $_POST['ang_level'];
@@ -21,6 +22,7 @@ $chem=$_POST['chem'];
 	$inny_level  = $_POST['inny_level'];
 	$bio_level = $_POST['bio_level'];
 	$chem_level=$_POST['chem_level'];
+	$pol_level=$_POST['pol_level'];
 	$probna= $_POST['probna'];
 	$kto=$_POST['kim'];
 	$dodatkowe=$_POST['dodatkowa'];
@@ -50,6 +52,7 @@ $chem=$_POST['chem'];
 		<tr><td>Informatyka: '.$infor.'</td><td> poziom: '.$infor_level.'</td></tr>
 		<tr><td>Fizyka: '.$fiz.'</td><td> poziom: '.$fiz_level.'</td></tr>
 		<tr><td>Niemiecki: '.$niem.'</td><td> poziom: '.$niem_level.'</td></tr>
+		<tr><td>Polski: '.$pol.'</td><td> poziom: '.$pol_level.'</td></tr>
 		<tr><td>Biologia: '.$bio.'</td><td> poziom: '.$bio_level.'</td></tr>
 		<tr><td>Chemia: '.$chem.'</td><td> poziom: '.$chem_level.'</td></tr>
 		<tr><td>pomoc w lekcjach: '.$opieka.'</td><td> poziom: '.$opieka_level.'</td></tr>

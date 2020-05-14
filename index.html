@@ -1245,32 +1245,33 @@
       <div class="row align-items-center">
         <div class="col-lg-5">
           <div class="row clock_sec clockdiv justify-content-center" id="clockdiv">
-            <div class="col-lg-12">
-              <h1>Liczby mówią same za siebie!</h1>
-              <p>
-                Zaufaj naszemu doświadczeniu
+            <div class="col-lg-12 text-center">
+              <h1>Liczby mówią same za siebie!<br> </h1>
+              <p class="text-center">
+                Postaw na jakość i zaufaj naszemu doświadczeniu.
                 <br />
-                Wypełnij formularz - odezwiemy się najszybciej jak to możliwe!
+                <!-- Wypełnij formularz - odezwiemy się najszybciej jak to możliwe! -->
               </p>
             </div>
             <div class="col clockinner1 clockinner col-8">
-              <h1>Ponad <span class="counter" data-counter-time="3000" data-counter-delay="10">400</span></h1>
+              <h1>Ponad <br><span class="counter" data-counter-time="4000" data-counter-delay="10">400</span></h1>
               <br>
               Przeprowadzonych lekcji
 
             </div>
             <div class="col clockinner1 clockinner col-8">
-              <h1>Aż <span class="counter" data-counter-time="3000" data-counter-delay="10">9</span></h1>
-              <br>
-              przedmiotów do wyboru
-
-            </div>
-            <div class="col clockinner1 clockinner col-8">
-              <h1>Ponad <span class=" counter" data-counter-time="3000" data-counter-delay="10">100</span></h1>
+              <h1>Ponad <br> <span class=" counter" data-counter-time="4000" data-counter-delay="10">50</span></h1>
               <br>
               Zadowolonych klientów
 
             </div>
+            <div class="col clockinner1 clockinner col-8">
+              <h1>Ponad<br> <span class="counter" data-counter-time="4000" data-counter-delay="10">9</span></h1>
+              <br>
+              przedmiotów do wyboru
+
+            </div>
+
 
           </div>
         </div>
@@ -1301,6 +1302,7 @@
                     <div class="col-12 styling d-flex align-items-center">Informatyka</div>
                     <div class="col-12 styling d-flex align-items-center">Fizyka</div>
                     <div class="col-12 styling d-flex align-items-center">Niemiecki</div>
+                    <div class="col-12 styling d-flex align-items-center">Polski</div>
                     <div class="col-12 styling d-flex align-items-center">Biologia</div>
                     <div class="col-12 styling d-flex align-items-center">Chemia</div>
                     <div class="col-12 styling d-flex align-items-center">Opieka lekcyjna</div>
@@ -1325,13 +1327,16 @@
                       <input class="check check5" type="checkbox" name="niem" value="tak" />
                     </div>
                     <div class="col-12 styling d-flex align-items-center">
-                      <input class="check check6" type="checkbox" name="bio" value="tak" />
+                      <input class="check check6" type="checkbox" name="pol" value="tak" />
                     </div>
                     <div class="col-12 styling d-flex align-items-center">
-                      <input class="check check7" type="checkbox" name="chem" value="tak" />
+                      <input class="check check7" type="checkbox" name="bio" value="tak" />
                     </div>
                     <div class="col-12 styling d-flex align-items-center">
-                      <input class="check check8" type="checkbox" name="opieka" value="tak" />
+                      <input class="check check8" type="checkbox" name="chem" value="tak" />
+                    </div>
+                    <div class="col-12 styling d-flex align-items-center">
+                      <input class="check check9" type="checkbox" name="opieka" value="tak" />
                     </div>
                   </div>
 
@@ -1376,6 +1381,15 @@
                     </div>
                     <div class="col-12 styling">
                       <select class=" form-control form-control-sm niem_sel" name="niem_level">
+                        <option value="">Poziom nauczania</option>
+                        <option value="podstawowa">Szkoła podstawowa</option>
+                        <option value="liceum">Liceum</option>
+                        <option value="studia">Studia</option>
+                        <option value="indywidual">Indywidualny</option>
+                      </select>
+                    </div>
+                    <div class="col-12 styling">
+                      <select class=" form-control form-control-sm pol_sel" name="pol_level">
                         <option value="">Poziom nauczania</option>
                         <option value="podstawowa">Szkoła podstawowa</option>
                         <option value="liceum">Liceum</option>
@@ -1480,14 +1494,13 @@
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <!-- <script src="js/countdown.js"></script> -->
   <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
   <script src="js/owl-carousel-thumb.min.js"></script>
   <script src="js/mail-script.js"></script>
-
   <script src="js/text_animation.js"></script>
   <script src="js/jquery.waypoints.min.js"></script>
   <script src="js/jquery.countup.js"></script>
+  <script src="js/countdown.js"></script>
   <script src="js/theme.js"></script>
 
 

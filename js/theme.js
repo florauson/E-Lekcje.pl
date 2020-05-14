@@ -20,7 +20,7 @@
       });
     }
   }
-  $('.counter').countUp();
+
   navbarFixed();
 
   //   // Search Toggle
