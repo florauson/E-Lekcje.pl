@@ -11,7 +11,7 @@ var TxtRotate = function (el, toRotate, period) {
 TxtRotate.prototype.tick = function () {
   var i = this.loopNum % this.toRotate.length;
   var fullTxt = this.toRotate[i];
-
+  s
   if (this.isDeleting) {
     this.txt = fullTxt.substring(0, this.txt.length - 1);
   } else {
@@ -56,6 +56,7 @@ window.onload = function () {
   css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid white }";
   document.body.appendChild(css);
 };
+
 
 var mat = document.querySelector(".matematyka");
 var fiz = document.querySelector(".fizyka");
