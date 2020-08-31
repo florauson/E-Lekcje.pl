@@ -2,7 +2,10 @@
 <html lang="pl">
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146502331-3"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-146502331-3"
+    ></script>
 
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -10,13 +13,16 @@
       function gtag() {
         dataLayer.push(arguments);
       }
-      gtag('js', new Date());
+      gtag("js", new Date());
 
-      gtag('config', 'UA-146502331-3');
+      gtag("config", "UA-146502331-3");
     </script>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <meta
       name="description"
       content="Oferujemy korepetycje online z przedmiotów takich jak: matematyka, fizyka, 
@@ -99,15 +105,30 @@
                 <span class="icon-bar"></span>
               </button>
               <!-- Collect the nav links, forms, and other content for toggling -->
-              <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+              <div
+                class="collapse navbar-collapse offset"
+                id="navbarSupportedContent"
+              >
                 <ul class="nav navbar-nav menu_nav ml-auto">
-                  <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                  <li
+                    class="nav-item"
+                    data-toggle="collapse"
+                    data-target=".navbar-collapse.show"
+                  >
                     <a class="nav-link" href="/">Strona główna</a>
                   </li>
-                  <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                  <li
+                    class="nav-item"
+                    data-toggle="collapse"
+                    data-target=".navbar-collapse.show"
+                  >
                     <a class="nav-link" href="./#przedmioty">Przedmioty</a>
                   </li>
-                  <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                  <li
+                    class="nav-item"
+                    data-toggle="collapse"
+                    data-target=".navbar-collapse.show"
+                  >
                     <a class="nav-link" href="./#jaktodziala">Jak to działa?</a>
                   </li>
                   <li
@@ -157,10 +178,15 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-8 col-md-8 col-sm-12 text-center mx-auto">
-              <form class="row pay_form justify-content-center" method="post" id="pay_form">
+              <form
+                class="row pay_form justify-content-center"
+                method="post"
+                id="pay_form"
+              >
                 <div class="col-12 text-center mx-auto my-5">
                   <h1 class="mb-2">Formularz opłacania lekcji</h1>
-                  Przed wypełnieniem prosimy o przeczytanie <a href="#instrukcja">instrukcji</a>.
+                  Przed wypełnieniem prosimy o przeczytanie
+                  <a href="#instrukcja">instrukcji</a>.
                 </div>
                 <div class="col-12 mx-auto">
                   <div class="form-group text-center mx-auto">
@@ -192,13 +218,14 @@
                     >
                       <option value="">Wybierz przedmiot</option>
                       <option value="pod">Matematyka</option>
-                      <option value="pod">Fizyka</option>
+                      <option value="spec">Fizyka</option>
                       <option value="pod">Angielski</option>
                       <option value="pod">Niemiecki</option>
                       <option value="pod">Polski</option>
-                      <option value="pod">Informatyka</option>
+                      <option value="spec">Informatyka</option>
                       <option value="spec">Biologia</option>
                       <option value="spec">Chemia</option>
+                      <option value="pod">Biochemia</option>
                     </select>
                   </div>
                   <div class="form-group text-center mx-auto">
@@ -213,14 +240,30 @@
                   </div>
                 </div>
                 <div class="col-6 text-right form-group wysokosc pr-0">
-                  <div class="col-12 d-flex align-items-center justify-content-end">
+                  <div
+                    class="col-12 d-flex align-items-center justify-content-end"
+                  >
                     Cena 1 lekcji (50 min):
                   </div>
-                  <div class="col-12 d-flex align-items-center justify-content-end">
+                  <div
+                    class="col-12 d-flex align-items-center justify-content-end"
+                  >
                     Wybierz Ilość lekcji:
                   </div>
-                  <div class="col-12 d-flex align-items-center justify-content-end">
+                  <div
+                    class="col-12 d-flex align-items-center justify-content-end"
+                  >
                     Kwota całkowita:
+                  </div>
+                  <div
+                    class="col-12 d-flex align-items-center justify-content-end"
+                  >
+                    Rabat:
+                  </div>
+                  <div
+                    class="col-12 d-flex align-items-center justify-content-end"
+                  >
+                    Do zapłaty:
                   </div>
                 </div>
 
@@ -255,7 +298,31 @@
                       id="cena"
                       name="cena"
                       style="width: 100%; text-align: center;"
-                      readonly="readonly"
+                      readonly
+                    />
+                  </div>
+                  <div class="col-12 d-flex align-items-center">
+                    <input
+                      type="number"
+                      class="form-control col-md-6 col-12"
+                      id="znizka"
+                      name="znizka"
+                      step="1"
+                      value="0"
+                      style="width: 100%; display: initial; text-align: center;"
+                      readonly
+                    />
+                  </div>
+                  <div class="col-12 d-flex align-items-center">
+                    <input
+                      type="number"
+                      class="form-control col-md-6 col-12"
+                      id="do_zap"
+                      name="do_zap"
+                      step="1"
+                      value="0"
+                      style="width: 100%; display: initial; text-align: center;"
+                      readonly
                     />
                   </div>
                 </div>
@@ -264,16 +331,31 @@
                   class="col-2 text-left d-flex justify-content-end align-items-center"
                   id="term_div"
                 >
-                  <input type="checkbox" class="form-control1" name="policy" id="policy" required />
+                  <input
+                    type="checkbox"
+                    class="form-control1"
+                    name="policy"
+                    id="policy"
+                    required
+                  />
                 </div>
                 <div
                   class="col-6 text-left d-flex justify-content-start align-items-center"
                   id="term_div"
                 >
-                  <p>&nbsp;Akceptuję <a href="./regulamin"> Regulamin</a> portalu e-lekcje.com</p>
+                  <p>
+                    &nbsp;Akceptuję <a href="./regulamin"> Regulamin</a> portalu
+                    e-lekcje.com
+                  </p>
                 </div>
                 <div class="col-md-12 my-5">
-                  <button type="submit" value="submit" class="btn primary-btn pay">Zapłać</button>
+                  <button
+                    type="submit"
+                    value="submit"
+                    class="btn primary-btn pay"
+                  >
+                    Zapłać
+                  </button>
                 </div>
               </form>
             </div>
@@ -281,14 +363,18 @@
               <h3 id="instrukcja">Instrukcja</h3>
 
               <p style="text-align: left;">
-                1. Formularz umożliwa opłacenie dowolnej ilości lekcji z wybranego przedmiotu.
+                1. Formularz umożliwa opłacenie dowolnej ilości lekcji z
+                wybranego przedmiotu.
                 <br />
-                2. Zawsze przed opłaceniem lekcji skontaktuj się z nami na kontakt@e-lekcje.com by
-                sprawdzić wolne terminy u wybranego korepetytora. <br />
-                3. Poprawnie wykonana płatność oznacza zarezerwowanie wybranych terminów. <br />
-                4. Aktualny cennik dostępny jest w zakładce <a href="./cennik">Cennik</a>. <br />
-                5. Naciśnięcie przycisku "Zapłać" spowoduje przeniesienie do bezpiecznej płatności
-                online tpay.com.
+                2. Zawsze przed opłaceniem lekcji skontaktuj się z nami na
+                kontakt@e-lekcje.com by sprawdzić wolne terminy u wybranego
+                korepetytora. <br />
+                3. Poprawnie wykonana płatność oznacza zarezerwowanie wybranych
+                terminów. <br />
+                4. Aktualny cennik dostępny jest w zakładce
+                <a href="./cennik">Cennik</a>. <br />
+                5. Naciśnięcie przycisku "Zapłać" spowoduje przeniesienie do
+                bezpiecznej płatności online tpay.com.
                 <a
                   href="https://tpay.com/jak-to-dziala"
                   target="_blank"
@@ -326,11 +412,19 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
                 <i class="fa fa-close"></i>
               </button>
               <h2>Dziękujemy</h2>
-              <p>Twoja wiadomość została wysłana, skontaktujemy się najszybciej jak to możliwe.</p>
+              <p>
+                Twoja wiadomość została wysłana, skontaktujemy się najszybciej
+                jak to możliwe.
+              </p>
             </div>
           </div>
         </div>
@@ -342,7 +436,12 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
                 <i class="fa fa-close"></i>
               </button>
               <h2>UPS !</h2>
@@ -369,7 +468,7 @@
 
       <script>
         $(function () {
-          $('.footer-area').load('footer.html');
+          $(".footer-area").load("footer.html");
         });
       </script>
     </body>
