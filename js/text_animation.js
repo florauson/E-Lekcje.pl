@@ -62,13 +62,14 @@ var mat = document.querySelector(".matematyka");
 var fiz = document.querySelector(".fizyka");
 var niem = document.querySelector(".niemiecki");
 var ang = document.querySelector(".angielski");
-var inny = document.querySelector(".inny");
+// var inny = document.querySelector(".inny");
 var infor = document.querySelector(".informatyka");
 var bio = document.querySelector(".biologia");
 var chem = document.querySelector(".chemia");
 var pol = document.querySelector(".polski");
+var lac = document.querySelector(".lacina");
 var boksy_all = document.querySelectorAll(".opis");
-backgrounds = [mat, fiz, ang, inny, infor, niem, bio, chem, pol];
+backgrounds = [mat, fiz, ang, infor, niem, bio, chem, pol, lac];
 
 function lighton(e) {
   boksy_all.forEach((elem) => {
@@ -105,12 +106,13 @@ function lighton(e) {
 mat.addEventListener("click", lighton);
 fiz.addEventListener("click", lighton);
 ang.addEventListener("click", lighton);
-inny.addEventListener("click", lighton);
+// inny.addEventListener("click", lighton);
 infor.addEventListener("click", lighton);
 niem.addEventListener("click", lighton);
 bio.addEventListener("click", lighton);
 chem.addEventListener("click", lighton);
 pol.addEventListener("click", lighton);
+lac.addEventListener("click", lighton);
 document.querySelector("body").addEventListener("click", (e) => {
 
   backgrounds.forEach((elem) => {
