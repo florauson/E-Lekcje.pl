@@ -150,10 +150,10 @@
                                         <!-- single course  informatyka-->
                                         <div
                                             class="card col-xl-4 col-lg-6 col-sm-12 col-md-6 col-12 text-center mb-4 border-0">
-                                            <button class="btn btn-light p-0 m-0 informatyka">
+                                            <button class="btn btn-light p-0 m-0 geografia">
                                                 <div class="card-header single_department border-0 m-0">
 
-                                                    <div class="text-center informatyka">
+                                                    <div class="text-center geografia">
                                                         <div class="dpmt_icon">
                                                             <img src="img/dpmt/earth.png" width="60px" alt="ziemia" />
                                                         </div>
@@ -256,10 +256,10 @@
                                         <!-- single course niemiecki-->
                                         <div
                                             class="card col-xl-4 col-lg-6 col-sm-12 col-md-6 col-12 text-center mb-4 border-0">
-                                            <button class="btn btn-light p-0 m-0 inny">
+                                            <button class="btn btn-light p-0 m-0 lacina">
                                                 <div class="card-header single_department border-0 m-0">
 
-                                                    <div class="text-center inny">
+                                                    <div class="text-center lacina">
                                                         <div class="dpmt_icon">
                                                             <img src="img/dpmt/icon6.png" alt="rozmowa" />
                                                         </div>
@@ -284,11 +284,17 @@
                 </div>
                 <div class="row form-group text-center mx-auto justify-content-center mt-3">
                     <select class="form-control col-lg-5 col-md-5 col-sm-12 poziom" name="przedmiot" required>
-                        <option value="wybierz">Wybierz poziom nauczania lub lekcję próbną</option>
-                        <option value="probna">Lekcja próbna</option>
-                        <option value="podstaw">Szkoła podstawowa</option>
-                        <option value="liceum">Liceum</option>
-                        <option value="studia">Studia</option>
+                        <option value="wybierz" style="display: none;">Wybierz poziom nauczania lub lekcję próbną
+                        </option>
+                        <option value="probna" style="display: none;">Lekcja próbna</option>
+                        <option value="podstaw" style="display: none;">Szkoła podstawowa</option>
+                        <option value="liceum" style="display: none;">Liceum</option>
+                        <option value="liceum_pod" style="display: none;">Liceum - matura podstawowa</option>
+                        <option value="liceum_roz" style="display: none;">Liceum - matura rozszerzona</option>
+                        <option value="studia" style="display: none;">Studia</option>
+                        <option value="podstawowy" style="display: none;">Podstawowy</option>
+                        <option value="rozszerzony" style="display: none;">Rozszerzony</option>
+                        <option value="indyw" style="display: none;">Indywidualny</option>
 
                     </select>
                 </div>
@@ -297,7 +303,10 @@
                         <div class="course_meta">
                             <a href="#zapisz" class="primary-btn text-uppercase but_reserv"
                                 style="display: none;">Dalej</a>
+                            <p class="brak" style="display: none;">Niestety aktualnie brak wolnych terminów dla
+                                wskazanego przedmiotu i poziomu.</p>
                         </div>
+
                     </div>
                 </div>
             </div>
