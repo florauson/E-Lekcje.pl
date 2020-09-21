@@ -20,12 +20,12 @@ var adres = "https://rezerwacja.e-lekcje.com/wizyta/krok3//";
 // [probna, podstawowa, lic-pod, lic-roz, studia, indywidualny]
 var bio_adr = ["7742", "7723", "0", "7668", "7737", "0"];
 var chem_adr = ["7741", "7738", "0", "7739", "7740", "0"];
-var mat_adr = ["7758", "7667", "7721", "0", "0", "0"];
+var mat_adr = ["7758", "7667", "7721", "7768", "7722", "0"];
 var fiz_adr = ["7772", "7769", "0", "7770", "7771", "0"];
 var geo_adr = ["7775", "7774", "0", "7776", "0", "0"];
 var lac_adr = ["7784", "0", "0", "7783", "7785", "7786"];
 var pol_adr = ["7793", "7794", "7795", "7796", "7798", "7797"];
-var ang_adr = ["0", "0", "0", "0", "0", "0"];
+var ang_adr = ["7777", "7778", "7779", "7780", "7781", "7782"];
 var niem_adr = ["0", "0", "0", "0", "0", "0"];
 var wys = "display:initial;";
 var nie_wys = "display:none;";

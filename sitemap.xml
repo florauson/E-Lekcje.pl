@@ -8,19 +8,29 @@
 
 
 <url>
-  <loc>https://e-lekcje.com/</loc>
-  <lastmod>2020-04-18T20:38:07+00:00</lastmod>
+  <loc>https://www.e-lekcje.com/</loc>
+  <lastmod>2020-09-08T19:26:39+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://e-lekcje.com/cennik</loc>
-  <lastmod>2020-04-18T20:38:06+00:00</lastmod>
+  <loc>https://www.e-lekcje.com/cennik</loc>
+  <lastmod>2020-09-04T21:45:10+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://e-lekcje.com/kontakt</loc>
-  <lastmod>2020-04-18T20:38:07+00:00</lastmod>
+  <loc>https://www.e-lekcje.com/kontakt</loc>
+  <lastmod>2020-09-08T19:26:40+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.e-lekcje.com/rezerwacja.html</loc>
+  <lastmod>2020-09-08T19:26:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.e-lekcje.com/regulamin.html</loc>
+  <lastmod>2020-09-08T19:26:40+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 
 
