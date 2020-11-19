@@ -33,6 +33,9 @@ theme.
   padding: 5%;
 }
 
+.wow {
+  visibility: hidden;
+}
 
 .btn-link:active,
 .btn-link:focus {

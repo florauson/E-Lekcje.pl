@@ -126,54 +126,62 @@ document.querySelector("body").addEventListener("click", (e) => {
 });
 
 // DO FORMULARZA
-var ang_c = document.querySelector(".check1");
-var mat_c = document.querySelector(".check2");
-var infor_c = document.querySelector(".check3");
-var fiz_c = document.querySelector(".check4");
-var niem_c = document.querySelector(".check5");
-var pol_c = document.querySelector(".check6");
-var bio_c = document.querySelector(".check7");
-var chem_c = document.querySelector(".check8");
-var opieka_c = document.querySelector(".check9");
-var inna = document.querySelector("input[name='inna']");
-inny_sel = document.querySelector(".inny_sel");
-ang_c.addEventListener("click", select_f);
-mat_c.addEventListener("click", select_f);
-infor_c.addEventListener("click", select_f);
-fiz_c.addEventListener("click", select_f);
-niem_c.addEventListener("click", select_f);
-pol_c.addEventListener("click", select_f);
-opieka_c.addEventListener("click", select_f);
-bio_c.addEventListener("click", select_f);
-chem_c.addEventListener("click", select_f);
-inna.addEventListener("focus", select_f2);
-inna.addEventListener("blur", select_f2);
-inna.addEventListener("keyup", select_f2);
-var selekty = document.querySelectorAll("select");
+// var ang_c = document.querySelector(".check1");
+// var mat_c = document.querySelector(".check2");
+// var infor_c = document.querySelector(".check3");
+// var fiz_c = document.querySelector(".check4");
+// var niem_c = document.querySelector(".check5");
+// var pol_c = document.querySelector(".check6");
+// var bio_c = document.querySelector(".check7");
+// var chem_c = document.querySelector(".check8");
+// var opieka_c = document.querySelector(".check9");
+// var inna = document.querySelector("input[name='inna']");
+// inny_sel = document.querySelector(".inny_sel");
+// ang_c.addEventListener("click", select_f);
+// mat_c.addEventListener("click", select_f);
+// infor_c.addEventListener("click", select_f);
+// fiz_c.addEventListener("click", select_f);
+// niem_c.addEventListener("click", select_f);
+// pol_c.addEventListener("click", select_f);
+// opieka_c.addEventListener("click", select_f);
+// bio_c.addEventListener("click", select_f);
+// chem_c.addEventListener("click", select_f);
+// inna.addEventListener("focus", select_f2);
+// inna.addEventListener("blur", select_f2);
+// inna.addEventListener("keyup", select_f2);
+// var selekty = document.querySelectorAll("select");
 
-selekty.forEach(elem => {
-  elem.style.display = "none";
-})
+// selekty.forEach(elem => {
+//   elem.style.display = "none";
+// })
 
-function select_f(e) {
-  let klasa = ".".concat(e.target.name.concat("_sel"));
+// function select_f(e) {
+//   let klasa = ".".concat(e.target.name.concat("_sel"));
 
-  if (e.target.checked == true) {
-    document.querySelector(klasa).style.display = "block"
-    document.querySelector(klasa).setAttribute("required", "");
-  } else {
-    document.querySelector(klasa).style.display = "none"
-    document.querySelector(klasa).removeAttribute("required");
-  }
-}
+//   if (e.target.checked == true) {
+//     document.querySelector(klasa).style.display = "block"
+//     document.querySelector(klasa).setAttribute("required", "");
+//   } else {
+//     document.querySelector(klasa).style.display = "none"
+//     document.querySelector(klasa).removeAttribute("required");
+//   }
+// }
 
-function select_f2(e) {
+// function select_f2(e) {
 
-  if (e.target.value != "") {
-    inny_sel.style.display = "block"
-    inny_sel.setAttribute("required", "");
-  } else {
-    inny_sel.style.display = "none"
-    inny_sel.removeAttribute("required");
-  }
+//   if (e.target.value != "") {
+//     inny_sel.style.display = "block"
+//     inny_sel.setAttribute("required", "");
+//   } else {
+//     inny_sel.style.display = "none"
+//     inny_sel.removeAttribute("required");
+//   }
+// }
+//do efektów z bootstrapa
+var kafle = document.querySelectorAll(".btn.btn-light");
+var dl_kafle = kafle.length;
+for (var i = 0; i < dl_kafle; i++) {
+  kafle[i].setAttribute("data-wow-delay", "0s");
+  kafle[i].setAttribute("data-wow-duration", "3s");
+  kafle[i].className += (" flipInY");
 }
