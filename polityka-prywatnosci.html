@@ -26,6 +26,7 @@
   <title>Polityka prywatności - E-Lekcje.com</title>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/mdb.min.css">
   <link rel="stylesheet" href="css/font-awesome.min.css" />
   <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css" />
   <link rel="stylesheet" href="css/all.css" />
@@ -347,14 +348,21 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script>
+      $(function () {
+        $(".footer-area").load("paski/footer.html");
+      });
+      $(function () {
+        $(".header-top").load("paski/header-top.html");
+      });
+      $(function () {
+        $(".main_menu").load("paski/main_menu.html");
+      });
+    </script>
     <script src="js/theme.js"></script>
 
 
   </body>
-  <script>
-    $(function () {
-      $(".footer-area").load("footer.html");
-    });
-  </script>
 
 </html>

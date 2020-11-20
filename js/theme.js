@@ -1,7 +1,9 @@
 (function ($) {
   'use strict';
 
-  var nav_offset_top = $('.header-top').height();
+  // var nav_offset_top = $('.header-top').height();
+  var nav_offset_top = 26;
+  // zrobione na sztywno, bo nie chciał sie pasek dobrze układać
   /*-------------------------------------------------------------------------------
 	  Navbar 
 	-------------------------------------------------------------------------------*/
@@ -23,19 +25,6 @@
 
   navbarFixed();
 
-  //   // Search Toggle
-  //   $('#search_input_box').hide();
-  //   $('#search').on('click', function () {
-  //     $('#search_input_box').slideToggle('slow');
-  //     $('#search_input').focus();
-  //   });
-  //   $('#close_search').on('click', function () {
-  //     $('#search_input_box').slideUp('slow');
-  //   });
-
-  /*----------------------------------------------------*/
-  /*  Clients Slider
-    /*----------------------------------------------------*/
   function active_testimonial() {
     if ($('.active_testimonial').length) {
       $('.active_testimonial').owlCarousel({
@@ -53,16 +42,6 @@
     }
   }
   active_testimonial();
-
-
-  /*----------------------------------------------------*/
-  /*  Google map js
-    /*----------------------------------------------------*/
-
-
-  /*----------------------------------------------------*/
-  /*  Google map js
-    /*----------------------------------------------------*/
 
 
 })(jQuery);

@@ -178,10 +178,10 @@ document.querySelector("body").addEventListener("click", (e) => {
 //   }
 // }
 //do efektów z bootstrapa
-var kafle = document.querySelectorAll(".btn.btn-light");
-var dl_kafle = kafle.length;
-for (var i = 0; i < dl_kafle; i++) {
-  kafle[i].setAttribute("data-wow-delay", "0s");
-  kafle[i].setAttribute("data-wow-duration", "3s");
-  kafle[i].className += (" flipInY");
-}
+// var kafle = document.querySelectorAll(".btn.btn-light");
+// var dl_kafle = kafle.length;
+// for (var i = 0; i < dl_kafle; i++) {
+//   kafle[i].setAttribute("data-wow-delay", "0s");
+//   kafle[i].setAttribute("data-wow-duration", "3s");
+//   kafle[i].className += (" flipInY");
+// }

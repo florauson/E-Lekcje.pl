@@ -28,11 +28,11 @@
   <!-- Bootstrap CSS -->
   <!-- <link rel="stylesheet" href="css/bootstrap.css" /> -->
   <link rel="stylesheet" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/mdb.min.css">
   <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css" />
   <link rel="stylesheet" href="css/all.css" />
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <!-- Material Design Bootstrap -->
-  <link rel="stylesheet" href="css/mdb.min.css">
+
   <link
     href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
@@ -41,65 +41,21 @@
   <!-- main css -->
   <link rel="stylesheet" href="css/style.css" />
 
+
 </head>
 
 <body data-spy="scroll">
+
   <!--================ Start Header Menu Area =================-->
   <header class="header_area" id="/">
     <div class="header-top">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-12 header-top-left">
-            <a href="mailto:kontakt@e-lekcje.com">
-              <i class="far fa-envelope"></i>
-              <span class="text">
-                <span class="text">kontakt@e-lekcje.com</span>
-              </span>
-            </a>
-          </div>
-        </div>
-      </div>
+
     </div>
-
     <div class="main_menu">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <a class="navbar-brand logo_h" href="/"><img class="main_logo" src="img/logo.png" alt="studenci" /></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-            <ul class="nav navbar-nav menu_nav ml-auto">
-              <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-                <a class="nav-link" href="/">Strona główna</a>
-              </li>
-              <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-                <a class="nav-link" href="#przedmioty">Przedmioty</a>
-              </li>
-              <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-                <a class="nav-link" href="#jaktodziala">Jak to działa?</a>
-              </li>
 
-              <li class="nav-item czer" data-toggle="collapse" data-target=".navbar-collapse.show">
-                <a class="nav-link animated pulse  infinite" href="/rezerwacja.html">Zarezerwuj</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="cennik">Cennik</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="kontakt">Kontakt</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
     </div>
   </header>
+
   <!-- Brand and toggle get grouped for better mobile display -->
 
 
@@ -590,7 +546,7 @@
             <div class="subject-content">
               <p>
                 Oferujemy szeroki zakres nauczania, począwszy od szkoły podstawowej po poziom studiów wyższych.
-                Wierzymy w spersonalizowane podejście do każdego ucznia - 
+                Wierzymy w spersonalizowane podejście do każdego ucznia -
                 <span style="color: #00aee0;">każda lekcja to indywidualne spotkanie korepetytora z uczniem.</span>
               </p>
               <p>
@@ -1534,35 +1490,38 @@
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
   <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.countup.js"></script>
+  <script type="text/javascript" src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
   <script src="js/owl-carousel-thumb.min.js"></script>
-  <script src="js/mail-script.js"></script>
   <script src="js/text_animation.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.countup.js"></script>
   <script src="js/countdown.js"></script>
-  <script src="js/theme.js"></script>
-  <script type="text/javascript" src="js/jquery.min.js"></script>
-  <!-- Bootstrap tooltips -->
-  <script type="text/javascript" src="js/popper.min.js"></script>
-  <!-- Bootstrap core JavaScript -->
-  <!-- MDB core JavaScript -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
-  <!-- Your custom scripts (optional) -->
-
   <script>
     $(function () {
-      $(".footer-area").load("footer.html");
+      $(".footer-area").load("paski/footer.html");
+    });
+    $(function () {
+      $(".header-top").load("paski/header-top.html");
+    });
+    $(function () {
+      $(".main_menu").load("paski/main_menu.html");
     });
   </script>
+
+
+
+
   <script>
     $(document).ready(function () {
       new WOW().init();
     });
   </script>
-
+  <script src="js/theme.js"></script>
 </body>
 
 

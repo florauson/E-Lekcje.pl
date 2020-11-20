@@ -9612,7 +9612,6 @@ table.table a.btn.btn-black {
 }
 
 .card {
-    font-weight: 400;
     border: 0;
     -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
@@ -9629,9 +9628,7 @@ table.table a.btn.btn-black {
 .card .card-body h3,
 .card .card-body h4,
 .card .card-body h5,
-.card .card-body h6 {
-    font-weight: 400
-}
+.card .card-body h6 {}
 
 .card .card-body .card-title a {
     -webkit-transition: 0.2s ease-in-out;
@@ -9645,7 +9642,6 @@ table.table a.btn.btn-black {
 
 .card .card-body .card-text {
     font-size: .9rem;
-    font-weight: 400;
     color: #747373
 }
 

@@ -25,6 +25,7 @@
     <link rel="icon" href="img/favicon.png" type="image/png">
     <title>Regulamin - E-Lekcje.com</title>
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/mdb.min.css">
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
     <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css" />
@@ -48,58 +49,10 @@
         <!--================ Start Header Menu Area =================-->
         <header class="header_area" id="/">
             <div class="header-top">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-12 header-top-left">
-                            <a href="mailto:kontakt@e-lekcje.com">
-                                <i class="far fa-envelope"></i>
-                                <span class="text">
-                                    <span class="text">kontakt@e-lekcje.com</span>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
+            </div>
             <div class="main_menu">
-                <nav class="navbar navbar-expand-lg navbar-light">
-                    <div class="container">
-                        <!-- Brand and toggle get grouped for better mobile display -->
-                        <a class="navbar-brand logo_h" href="/"><img class="main_logo" src="img/logo.png"
-                                alt="studenci" /></a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse"
-                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <!-- Collect the nav links, forms, and other content for toggling -->
-                        <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-                            <ul class="nav navbar-nav menu_nav ml-auto">
-                                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-                                    <a class="nav-link" href="/">Strona główna</a>
-                                </li>
-                                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-                                    <a class="nav-link" href="./#przedmioty">Przedmioty</a>
-                                </li>
-                                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-                                    <a class="nav-link" href="./#jaktodziala">Jak to działa?</a>
-                                </li>
-                                <li class="nav-item czer" data-toggle="collapse" data-target=".navbar-collapse.show">
-                                    <a class="nav-link" href="/#zapisz">Zarezerwuj</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="cennik">Cennik</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link " href="kontakt">Kontakt</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
+
             </div>
         </header>
         <!-- REGULAMIN CONTENT -->
@@ -237,6 +190,8 @@
                 pośrednictwem następujących zewnętrznych serwis&oacute;w płatności elektronicznych takich jak:</p>
             <p style="padding-left: 60px;">- Tpay.com </p>
             <p style="padding-left: 60px;">- Dotpay.pl </p>
+            <p style="padding-left: 30px;">4.9. Uczeń może anulować lekcję maksymalnie 12 godzin przed planowanym
+                terminem rozpoczęcia lekcji z gwarancją zwrotu należności. </p>
             <p>&nbsp;</p>
             <ul>
                 <li>
@@ -355,21 +310,30 @@
             <p>&nbsp;</p>
             <p>&nbsp;</p>
         </div>
+        <footer class="footer-area section_gap">
 
+        </footer>
 
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="js/jquery-3.2.1.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/mdb.min.js"></script>
+        <script>
+            $(function () {
+                $(".footer-area").load("paski/footer.html");
+            });
+            $(function () {
+                $(".header-top").load("paski/header-top.html");
+            });
+            $(function () {
+                $(".main_menu").load("paski/main_menu.html");
+            });
+        </script>
         <script src="js/theme.js"></script>
 
 
     </body>
-    <script>
-        $(function () {
-            $(".footer-area").load("footer.html");
-        });
-    </script>
 
 </html>
