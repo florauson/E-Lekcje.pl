@@ -72,7 +72,7 @@ function lighton(e) {
         poziom.options[2].style = wys;
         poziom.options[3].style = wys;
         poziom.options[4].style = wys;
-        poziom.options[5].style = wys;
+        // poziom.options[5].style = wys;
         break;
       case "fizyka":
         wybrana = fiz_adr;
@@ -80,7 +80,7 @@ function lighton(e) {
         poziom.options[1].style = wys;
         poziom.options[2].style = wys;
         poziom.options[4].style = wys;
-        poziom.options[5].style = wys;
+        // poziom.options[5].style = wys;
         break;
       case "geografia":
         wybrana = geo_adr;

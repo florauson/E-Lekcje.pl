@@ -33,6 +33,10 @@ theme.
   padding: 5%;
 }
 
+.reservation_area.andea {
+  padding: 1%;
+}
+
 .wow {
   visibility: hidden;
 }
