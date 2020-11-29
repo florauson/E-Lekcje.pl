@@ -120,7 +120,6 @@ function lighton(e) {
         poziom.options[2].style = wys;
         poziom.options[3].style = wys;
         poziom.options[4].style = wys;
-        poziom.options[5].style = wys;
         poziom.options[6].style = wys;
         break;
       default:
