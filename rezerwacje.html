@@ -26,10 +26,11 @@
     <link rel="icon" href="img/favicon.png" type="image/png" />
     <title>Rezerwacja zajęć</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="css/font-awesome.min.css" />
-    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css" />
-    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../vendors/owl-carousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="../css/all.css" />
+    <link rel="stylesheet" href="../css/mdb.min.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet" />
@@ -80,11 +81,12 @@
                                 <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
                                     <a class="nav-link" href="./#jaktodziala">Jak to działa?</a>
                                 </li>
-                                <li class="nav-item " data-toggle="collapse" data-target=".navbar-collapse.show">
-                                    <a class="nav-link pricing" href="./rezerwacje">Zarezerwuj</a>
+                                <li class="nav-item czer" data-toggle="collapse" data-target=".navbar-collapse.show">
+                                    <a class="nav-link animated pulse infinite" href="./rezerwacje">Zarezerwuj</a>
                                 </li>
-                                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-                                    <a class="nav-link" href="./#przedmioty">Nasz zespół</a>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="" data-toggle="modal" data-target="#nasz_zespol">Nasz
+                                        zespół</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="cennik">Cennik</a>
@@ -312,7 +314,58 @@
         <!--================Contact Area =================-->
 
         <!--================ start footer Area  =================-->
+        <div class="modal fade" id="nasz_zespol" tabindex="-1" role="dialog" aria-label="Close"
+            aria-labelledby="exampleModalLabel">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header py-0">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" class="text-huge">
+                                <h1>&times;</h1>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="container-fluid p-3">
+                        <div class="row justify-content-center">
+                            <div class="text-fontsize18 text-center">
+                                <h1 class="text-center">Nasz zespół</h1>
+                                <p>Poznaj zespół naszych korepetytorów!</p>
+                            </div>
+                        </div>
+                        <br>
+                        <p class="text-center"> Wybierz przedmiot, by pokazać dostępnych korepetytorów:</p>
+                        <div class="row form-group text-center mx-auto justify-content-center mt-3">
+                            <select class="form-control col-lg-5 col-md-5 col-sm-12 przedmiot" name="przedmiot"
+                                required>
+                                <option value="dowolny">Dowolny</option>
+                                <option value="matematyka">Matematyka</option>
+                                <option value="fizyka">Fizyka</option>
+                                <option value="biologia">Biologia</option>
+                                <option value="chemia">Chemia</option>
+                                <option value="geografia">Geografia</option>
+                                <option value="niemiecki">Język Niemiecki</option>
+                                <option value="angielski">Język Angielski</option>
+                                <option value="polski">Język polski </option>
+                                <option value="lacina">Łacina</option>
 
+                            </select>
+                        </div>
+                        <br>
+                        <div class="row bufor d-none justify-content-center">
+                            <div class="col-12 col-md-8">
+                                <div><img src="../img/loading.gif" alt="" width="100%"></div>
+
+                            </div>
+                        </div>
+                        <div class="nasz-zespol">
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
         <footer class="footer-area section_gap"></footer>
 
         <!--================ End footer Area  =================-->
@@ -339,7 +392,11 @@
             $(function () {
                 $(".footer-area").load("paski/footer.html");
             });
+            $(function () {
+                $(".nasz-zespol").load("../nasz-zespol.html");
+            });
         </script>
+        <script src="../js/filtracja.js"></script>
     </body>
 </body>
 
