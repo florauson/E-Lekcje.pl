@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146502331-3"></script>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "UA-146502331-3");
+    </script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description"
+        content="Wybierz przedmiot i zarezerwuj lekcje za pomocą prostego kalendarza. Po wybraniu poziomu oraz korepetytora, pojawią się dostępne terminy zajęć, które można opłacić online zaraz po dokonaniu rezerwacji." />
+    <meta name="keywords"
+        content="E-Lekcje, korepetycje, angielski, niemiecki, geografia, fizyka, chemia, matematyka, łacina, biologia, język polski korepetycje online" />
+    <meta name="author" content="E-Lekcje.com" />
+    <link rel="icon" href="../img/favicon.png" type="image/png" />
+    <title>Rezerwacja zajęć</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../vendors/owl-carousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="../css/all.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+
+<!--================ Start Header Menu Area =================-->
+
+<body data-spy="scroll">
+    <!--================ Start Header Menu Area =================-->
+    <header class="header_area" id="/">
+        <div class="header-top">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12 header-top-left">
+                        <a href="mailto:andea@e-lekcje.com">
+                            <i class="far fa-envelope"></i>
+                            <span class="text">
+                                <span class="text">dedykowany kontakt: andea@e-lekcje.com</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main_menu">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <a class="navbar-brand logo_h" href="/"><img class="main_logo" src="../img/logo.png"
+                            alt="studenci" /></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav menu_nav ml-auto">
+                            <!-- <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                                <a class="nav-link" href="/">Strona główna</a>
+                            </li> -->
+                            <!-- <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                                    <a class="nav-link" href="./#przedmioty">Przedmioty</a>
+                                </li>
+                                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                                    <a class="nav-link" href="./#jaktodziala">Jak to działa?</a>
+                                </li> -->
+                            <li class="nav-item " data-toggle="collapse" data-target=".navbar-collapse.show">
+                                <a class="nav-link pricing" href="./rezerwacje">Instrukcja</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="" data-toggle="modal" data-target="#nasz_zespol">Nasz
+                                    zespół</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="" data-toggle="modal" data-target="#kontakt">Kontakt</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <!--================Contact Area =================-->
+    <section class="reservation_area andea">
+        <div class="container">
+
+            <br>
+            <div class="row justify-content-center">
+                <div class="col-6 row justify-content-center">
+                    <img src="../img/Logo_Andea.jpg" alt="" width="50%">
+                </div>
+
+            </div>
+            <div class="row align-items-center">
+                <h3 class="col-12 text-center">Wybierz przedmiot oraz poziom nauczania aby zarezerwować lekcje:</h3>
+            </div>
+
+            <div class="department_area section_gap reservation">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-12">
+                            <div class="dpmt_courses ">
+                                <div class="row justify-content-center">
+                                    <!-- single course -->
+                                    <div
+                                        class="card col-xl-4 col-lg-6 col-sm-12 col-md-6 col-12 text-center border-0 mb-4 ">
+                                        <button class="btn btn-light p-0 m-0 matematyka">
+                                            <div class="card-header single_department border-0 m-0" id="headingOne">
+
+                                                <div class="text-center matematyka">
+                                                    <div class="dpmt_icon">
+                                                        <img src="../img/dpmt/icon5.png" alt="dom" />
+                                                    </div>
+                                                    <h4 class="text-decoration-none"> Matematyka</h4>
+                                                </div>
+
+                                            </div>
+                                        </button>
+                                    </div>
+                                    <!-- single course fizyka -->
+                                    <div
+                                        class="card col-xl-4 col-lg-6 col-sm-12 col-md-6 col-12 text-center mb-4 border-0">
+                                        <button class="btn btn-light p-0 m-0 fizyka">
+                                            <div class="card-header single_department border-0 m-0">
+
+                                                <div class="text-center fizyka">
+                                                    <div class="dpmt_icon">
+                                                        <img src="../img/dpmt/icon2.png" alt="lupa" />
+                                                    </div>
+                                                    <h4 class="text-decoration-none">Fizyka</h4>
+                                                </div>
+
+                                            </div>
+                                        </button>
+
+                                    </div>
+
+                                    <!-- single course  informatyka-->
+                                    <div
+                                        class="card col-xl-4 col-lg-6 col-sm-12 col-md-6 col-12 text-center mb-4 border-0">
+                                        <button class="btn btn-light p-0 m-0 geografia">
+                                            <div class="card-header single_department border-0 m-0">
+
+                                                <div class="text-center geografia">
+                                                    <div class="dpmt_icon">
+                                                        <img src="../img/dpmt/earth.png" width="60px" alt="ziemia" />
+                                                    </div>
+                                                    <h4 class="text-decoration-none">Geografia</h4>
+                                                </div>
+
+                                            </div>
+                                        </button>
+
+                                    </div>
+                                    <!-- single course angielski -->
+                                    <div
+                                        class="card col-xl-4 col-lg-6 col-sm-12 col-md-6 col-12 text-center border-0 mb-4">
+                                        <button class="btn btn-light p-0 m-0 angielski">
+                                            <div class="card-header single_department border-0 m-0">
+
+                                                <div class="text-center angielski">
+                                                    <div class="dpmt_icon">
+                                                        <img src="../img/dpmt/icon1.png" alt="znaki" />
+                                                    </div>
+                                                    <h4 class="text-decoration-none">Angielski</h4>
+                                                </div>
+
+                                            </div>
+                                        </button>
+
+                                    </div>
+                                    <!-- single course niemiecki -->
+                                    <div
+                                        class="card col-xl-4 col-lg-6 col-sm-12 col-md-6 col-12 text-center mb-4 border-0">
+                                        <button class="btn btn-light p-0 m-0 niemiecki">
+                                            <div class="card-header single_department border-0 m-0">
+
+                                                <div class="text-center niemiecki">
+                                                    <div class="dpmt_icon">
+                                                        <img src="../img/dpmt/icon3.png" alt="ksiazka" />
+                                                    </div>
+                                                    <h4 class="text-decoration-none">Niemiecki</h4>
+                                                </div>
+
+                                            </div>
+                                        </button>
+
+                                    </div>
+                                    <!-- single course polski -->
+                                    <div
+                                        class="card col-xl-4 col-lg-6 col-sm-12 col-md-6 col-12 text-center mb-4 border-0">
+                                        <button class="btn btn-light p-0 m-0 polski">
+                                            <div class="card-header single_department border-0 m-0">
+
+                                                <div class="text-center polski">
+                                                    <div class="dpmt_icon">
+                                                        <img src="../img/dpmt/polski.png" width="60px"
+                                                            alt="ikona polskiego" />
+                                                    </div>
+                                                    <h4 class="text-decoration-none">Polski</h4>
+                                                </div>
+
+                                            </div>
+                                        </button>
+
+                                    </div>
+                                    <!-- single course biologia-->
+                                    <div
+                                        class="card col-xl-4 col-lg-6 col-sm-12 col-md-6 col-12 text-center mb-4 border-0">
+                                        <button class="btn btn-light p-0 m-0 biologia">
+                                            <div class="card-header single_department border-0 m-0">
+
+                                                <div class="text-center biologia">
+                                                    <div class="dpmt_icon">
+                                                        <img src="../img/dpmt/biology.png" width="60px"
+                                                            alt="ikona biologii" />
+                                                    </div>
+                                                    <h4 class="text-decoration-none">Biologia</h4>
+                                                </div>
+
+                                            </div>
+                                        </button>
+
+                                    </div>
+                                    <!-- single course chemia -->
+                                    <div
+                                        class="card col-xl-4 col-lg-6 col-sm-12 col-md-6 col-12 text-center mb-4 border-0">
+                                        <button class="btn btn-light p-0 m-0 chemia">
+                                            <div class="card-header single_department border-0 m-0">
+
+                                                <div class="text-center chemia">
+                                                    <div class="dpmt_icon">
+                                                        <img src="../img/dpmt/chemia.png" width="55px"
+                                                            alt="ikona chemii" />
+                                                    </div>
+                                                    <h4 class="text-decoration-none">Chemia</h4>
+                                                </div>
+
+                                            </div>
+                                        </button>
+
+                                    </div>
+
+                                    <!-- single course niemiecki-->
+                                    <div
+                                        class="card col-xl-4 col-lg-6 col-sm-12 col-md-6 col-12 text-center mb-4 border-0">
+                                        <button class="btn btn-light p-0 m-0 lacina">
+                                            <div class="card-header single_department border-0 m-0">
+
+                                                <div class="text-center lacina">
+                                                    <div class="dpmt_icon">
+                                                        <img src="../img/dpmt/icon6.png" alt="rozmowa" />
+                                                    </div>
+                                                    <h4 class="text-decoration-none">Łacina</h4>
+                                                </div>
+
+                                            </div>
+                                        </button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="row form-group text-center mx-auto justify-content-center mt-3">
+                <select class="form-control col-lg-5 col-md-5 col-sm-12 poziom" name="przedmiot" required>
+                    <option value="wybierz" style="display: none;">Wybierz poziom nauczania lub lekcję próbną
+                    </option>
+                    <option value="probna" style="display: none;">Lekcja próbna</option>
+                    <option value="podstaw" style="display: none;">Szkoła podstawowa</option>
+                    <option value="liceum_pod" style="display: none;">Liceum/Technikum</option>
+                    <option value="liceum_roz" style="display: none;">Liceum/Technikum/Matura rozszerzona</option>
+                    <option value="studia" style="display: none;">Studia</option>
+                    <option value="indyw" style="display: none;">Inny (opisz w polu Uwagi)</option>
+                </select>
+            </div>
+            <div class="row text-center">
+                <div class="col-12">
+                    <div class="course_meta">
+                        <a href="#zapisz" class="primary-btn text-uppercase but_reserv" style="display: none;">Dalej</a>
+                        <p class="brak" style="display: none;">Niestety przedmiot nie jest aktualnie dostępny w
+                            ofercie.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <!--================Contact Area =================-->
+
+    <!--================ start footer Area  =================-->
+
+    <footer class="footer-area section_gap"></footer>
+    <!-- Okienko z kontaktem dla Andey -->
+    <div id="kontakt" class="modal modal-message fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="fa fa-close"></i>
+                    </button>
+                    <h2>Dedykowany kontakt - Andea</h2>
+                    <p>Kontakt dla pracowników firmy Andea możliwy jest pod adresem mailwym
+                        andea@e-lekcje.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="nasz_zespol" tabindex="-1" role="dialog" aria-label="Close"
+        aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="text-huge">&times;</span>
+                    </button>
+                </div>
+                <div class="container-fluid p-3">
+                    <div class="row justify-content-center">
+                        <div class="text-fontsize18 text-center">
+                            <h1 class="text-center">Nasz zespół</h1>
+                            <p>Poznaj zespół naszych korepetytorów!</p>
+                        </div>
+                    </div>
+                    <br>
+                    <p class="text-center"> Wybierz przedmiot, by pokazać dostępnych korepetytorów:</p>
+                    <div class="row form-group text-center mx-auto justify-content-center mt-3">
+                        <select class="form-control col-lg-5 col-md-5 col-sm-12 przedmiot" name="przedmiot" required>
+                            <option value="dowolny">Dowolny</option>
+                            <option value="matematyka">Matematyka</option>
+                            <option value="fizyka">Fizyka</option>
+                            <option value="biologia">Biologia</option>
+                            <option value="chemia">Chemia</option>
+                            <option value="geografia">Geografia</option>
+                            <option value="niemiecki">Język Niemiecki</option>
+                            <option value="angielski">Język Angielski</option>
+                            <option value="polski">Język polski </option>
+                            <option value="lacina">Łacina</option>
+
+                        </select>
+                    </div>
+                    <br>
+                    <div class="row bufor d-none justify-content-center">
+                        <div class="col-12 col-md-8">
+                            <div><img src="../img/loading.gif" alt="" width="100%"></div>
+
+                        </div>
+                    </div>
+                    <div class="nasz-zespol">
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.ajaxchimp.min.js"></script>
+    <script src="../js/jquery.validate.min.js"></script>
+    <script src="../js/theme.js"></script>
+    <script src="../js/jquery.form.js"></script>
+    <script src="../js/reservation_andea.js"></script>
+
+    <script>
+        $(function () {
+            $(".footer-area").load("paski/footer.html");
+        });
+        $(function () {
+            $(".nasz-zespol").load("nasz-zespol.html");
+        });
+    </script>
+    <script src="../js/filtracja.js"></script>
+</body>
+
+
+</html>
