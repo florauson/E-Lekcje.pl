@@ -1,33 +1,20 @@
-/*----------------------------------------------------
-@File: Default Styles
-@Author: SPONDON IT
-Author E-mail: info@spondonit.com
-
-This file contains the styling for the actual theme, this
-is the file you need to edit to change the look of the
-theme.
----------------------------------------------------- */
-/*=====================================================================
-@Template Name: Medicare Medical
-@Author: Naim LAsker
-@Developed By: Naim LAsker
-
-
-=====================================================================*/
-/*----------------------------------------------------*/
-/*font Variables*/
-/*Color Variables*/
-/*=================== fonts ====================*/
 @import url("https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600|Montserrat:400,600");
 
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
+
 @font-face {
   font-family: Myfont;
   src: url(/fonts/LemonadeStand-J0Ln.ttf);
 }
+
+.czemu-elekcje {
+  /* background-color: rgba(190, 186, 186, 0.76); */
+  margin-top: 1%;
+}
+
 
 .reservation_area {
   padding: 5%;
@@ -225,7 +212,7 @@ div.department_area.section_gap {
 }
 
 .section_gap {
-  padding: 120px 0;
+  padding: 5% 0;
 }
 
 .section_gap.reservation {
@@ -884,6 +871,10 @@ video {
   .home_banner_area .banner_inner .banner_content h2 {
     font-size: 46px;
   }
+
+  .home_banner_area .banner_inner .banner_content h1 {
+    font-size: 46px;
+  }
 }
 
 @media (max-width: 1023px) {
@@ -900,6 +891,10 @@ video {
   .home_banner_area .banner_inner .banner_content h2 {
     font-size: 38px;
   }
+
+  .home_banner_area .banner_inner .banner_content h1 {
+    font-size: 38px;
+  }
 }
 
 @media (max-width: 780px) {
@@ -908,6 +903,10 @@ video {
   }
 
   .home_banner_area .banner_inner .banner_content h2 {
+    font-size: 42px;
+  }
+
+  .home_banner_area .banner_inner .banner_content h1 {
     font-size: 42px;
   }
 
@@ -922,6 +921,10 @@ video {
   }
 
   .home_banner_area .banner_inner .banner_content h2 {
+    font-size: 33px;
+  }
+
+  .home_banner_area .banner_inner .banner_content h1 {
     font-size: 33px;
   }
 
@@ -942,6 +945,10 @@ video {
   .home_banner_area .banner_inner .banner_content h2 {
     font-size: 28px;
   }
+
+  .home_banner_area .banner_inner .banner_content h1 {
+    font-size: 28px;
+  }
 }
 
 @media (max-width: 470px) {
@@ -950,6 +957,11 @@ video {
   }
 
   .home_banner_area .banner_inner .banner_content h2 {
+    font-size: 22px;
+    line-height: 1em;
+  }
+
+  .home_banner_area .banner_inner .banner_content h1 {
     font-size: 22px;
     line-height: 1em;
   }
@@ -965,6 +977,11 @@ video {
   }
 
   .home_banner_area .banner_inner .banner_content h2 {
+    font-size: 21px;
+    line-height: 1em;
+  }
+
+  .home_banner_area .banner_inner .banner_content h1 {
     font-size: 21px;
     line-height: 1em;
   }
@@ -995,6 +1012,10 @@ video {
     font-size: 19px;
   }
 
+  .home_banner_area .banner_inner .banner_content h1 {
+    font-size: 19px;
+  }
+
   .home_banner_area .single_feature h4 {
     font-size: 16px;
   }
@@ -1014,6 +1035,10 @@ video {
   }
 
   .home_banner_area .banner_inner .banner_content h2 {
+    font-size: 18px;
+  }
+
+  .home_banner_area .banner_inner .banner_content h1 {
     font-size: 18px;
   }
 
@@ -5286,3 +5311,23 @@ h6 {
 /*---------------------------------------------------- */
 
 /*# sourceMappingURL=style.css.map */
+
+.h1-opt {
+  color: rgb(255, 255, 255);
+  line-height: 54px;
+  text-align: center;
+  font-size: 70px;
+  font-weight: 100;
+  margin-top: 0px;
+}
+
+.h2-opt {
+  font-size: 42px;
+  margin-bottom: 25px;
+}
+
+.seo-text {
+  margin: 0 auto;
+  padding-top: 40px;
+  text-align: justify;
+}
